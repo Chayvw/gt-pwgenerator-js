@@ -13,10 +13,10 @@ function writePassword() {
 
 }
 function generatePassword(){
-  var legenthOfPassword = prompt("How many characters would you like?")
-  if(legenthOfPassword < 8 || legenthOfPassword > 128){
+  var legenthOfPassword = prompt("How many characthers would you like your password to contain?")
+  if(legenthOfPassword < 8 || legenthOfPassword > 128 || isNaN(legenthOfPassword)){
     alert("Please choose a length between 8 and 128");
-    return;
+    return "A valid password will need at least 8-128 characters.";
   }
   var specialConfirm = confirm("Would you like to use any special characters?")
   var numberConfirm = confirm("Would you like to use any numbers?")
