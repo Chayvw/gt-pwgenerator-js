@@ -13,7 +13,7 @@ This app will run in the browser which can be accessed in the index.html file.
 
 
 ## Usage 
-Once you select the generate password button it will take you through a series of questions so that the app can generate a password to the users prefrence. A strong password provides greater security. 
+Once you select the generate password button it will take you through a series of questions so that the app can generate a password to the users prefrence. A strong password provides greater security. ![](assets/images/PWGEN.jpg.png)
  
 
 
