@@ -13,19 +13,20 @@ var numberArray = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var userChoice = [];
 
 
-
+// Will allow user to select desired password length
 function generatePassword() {
   var legenthOfPassword = prompt("How many characthers would you like your password to contain?")
   if (legenthOfPassword < 8 || legenthOfPassword > 128) {
     alert("Please choose a length between 8 and 128");
     return generatePassword();
-    // add regular expression
+  
   }
+  // User will confirm character options 
   var specialConfirm = confirm("Would you like to use any special characters?")
   var numberConfirm = confirm("Would you like to use any numbers?")
   var lowerCase = confirm("Would you like to use lower case letters?")
   var upperCase = confirm("Would you like to use upper case letters?")
-  // user "library" 
+  // Condtionals for character selection
   userChoice = [];
   if (specialConfirm) {
     userChoice = userChoice.concat(special)
